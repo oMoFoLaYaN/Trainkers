@@ -1,3 +1,5 @@
+import { Outlet, Link } from "react-router-dom";
+
 const Header = () => {
 return (
         <header className="l-header" id="header">
@@ -7,15 +9,14 @@ return (
                 <i className="bx bxs-grid"></i>
             </div>
 
-            <a href="#" className="nav__logo">Shoe<span>zzz</span></a>
+            <a href="#" className="nav__logo">Train<span>kers</span></a>
 
             <div className="nav__menu" id="nav-menu">
                 <ul className="nav__list">
 
-                    <li className="nav__item">
-                        <a href="#home" className="nav__link active">Home</a>
+                <li className="nav__item">
+                <Link to={`/`} className="nav__link active">Home</Link>
                     </li>
-
                     <li className="nav__item">
                         <a href="#featured" className="nav__link">Featured</a>
                     </li>
@@ -29,7 +30,7 @@ return (
                     </li>
 
                     <li className="nav__item">
-                        <a href="./shop.html" className="nav__link">Shop</a>
+                        <Link to={`/shop`} className="nav__link">Shop</Link>
                     </li>
 
                 </ul>

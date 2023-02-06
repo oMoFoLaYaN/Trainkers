@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="footer">
     <div className="footer__container bd-grid">
         <div className="footer__box">
-            <h3 className="footer__title">Shoezzz</h3>
+            <h3 className="footer__title">Trainkers</h3>
             <p className="footer__description">
                 New collections of shoes 2020.
             </p>
