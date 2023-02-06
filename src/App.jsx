@@ -1,13 +1,21 @@
-function App() {
- 
+import { Home, Header, Collections, Featured, Footer, Women, Offer, Newsletter, New } from "./components";
 
-  return (
-    <div className="w-screen h-screen bg-red-300">
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+const App = () => {
+ return (
+    <div>
+    <Header/>
+    <main classNameName="l-main">
+      <Home/>
+      <Featured/>
+      <Collections/>
+      <Women/>
+      <New/>
+      <Offer/>
+      <Newsletter/>
+    </main>
+    <Footer/>
     </div>
-  )
+   )
 }
 
 export default App
